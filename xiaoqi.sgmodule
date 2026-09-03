@@ -1367,7 +1367,6 @@ DOMAIN,access.toggle.qq.com,REJECT
 DOMAIN,jsb.zijieapi.com,REJECT
 DOMAIN,gatherer.m.qq.com,REJECT
 DOMAIN,orange-dc.m.taobao.com,REJECT
-DOMAIN,goofish.mtop.tengine.ingress.alibabacorp.com.gds.alibabadns.com,REJECT
 DOMAIN,i.snssdk.com,REJECT
 DOMAIN,lf.snssdk.com,REJECT
 DOMAIN,sdk-track.66mobi.com,REJECT
@@ -7081,13 +7080,7 @@ http:\/\/ad\.myfriday\.cn\/d\/json\/1\.1 reject
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit reject-dict
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise reject-dict
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv reject-dict
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/1\.0 reject-dict
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/2\.0 reject-dict
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.idle\.coin\.nextfresh\/1\.0 reject-dict
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.ads reject-dict
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.playboy\.recommend\/1\.0 reject
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.resell\.recommendorhotcate\/1\.0 reject-dict
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.buy\.feeds reject-dict
 ^https:\/\/abcapi\.lenovoimage\.com\/v1\/promote\/startup reject-dict
 ^https:\/\/a\.line\.me\/oa\/v\d\/e$ reject
 ^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$ reject
