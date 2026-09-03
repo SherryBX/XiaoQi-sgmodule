@@ -4417,8 +4417,6 @@ URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idle\.activity\.query,R
 URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.idle\.ad\.expose,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idlecommerce\.splash,REJECT
-URL-REGEX,^https://acs\.m\.goofish\.com/gw/com\.taobao\.idle\.user\.init,REJECT
-URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idlehome\.home\.circle\.list,REJECT
 URL-REGEX,^https://ynuf\.aliapp\.org/service/um\.json,REJECT
 URL-REGEX,^https://mpaasapi\.mpaas\.cn\-hangzhou\.aliyuncs\.com/mgw\.htm,REJECT
 URL-REGEX,^https://mdap\.mpaas\.cn\-hangzhou\.aliyuncs\.com/loggw/logconfig\.do,REJECT
@@ -4561,7 +4559,6 @@ URL-REGEX,^https://mdap\.mpaas\.cn\-hangzhou\.aliyuncs\.com/loggw/logUpload\.do,
 URL-REGEX,^https://p0\.meituan\.net/bizad/,REJECT
 URL-REGEX,^https://p1\.meituan\.net/bizad/,REJECT
 URL-REGEX,^https://p2\.meituan\.net/bizad/,REJECT
-URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idlehome\.home\.nextfresh,REJECT
 URL-REGEX,^https://img\.meituan\.net/bizad,REJECT
 URL-REGEX,^https://img\.meituan\.net/waimaiad,REJECT
 URL-REGEX,^https://apimobile\.meituan\.com/dsp,REJECT
@@ -7471,7 +7468,6 @@ PupuSplashAds5=type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/m
 PupuSplashAds6=type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/app_resource\/resource_preload\/list_h5_resource,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js
 myBlockAds3=type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get),requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js
 cainiao4=type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js
-goofish=type=http-response,pattern=^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/,requires-body=1,script-path=https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js
 meiyou_ads=type=http-response,pattern=^https:\/\/config-service\.seeyouyima\.com\/api\/configs\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/meiyou/meiyou_ads.js
 meiyou_ads2=type=http-response,pattern=^https:\/\/config-service\.seeyouyima\.com\/api\/configs\/batch\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/meiyou/meiyou_ads.js
 zhihu3=type=http-response,pattern=^https:\/\/appcloud2\.zhihu\.com\/v3\/config,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js
@@ -7494,16 +7490,10 @@ bohe_ads3=type=http-response,pattern=^https:\/\/api\.boohee\.com\/meta-interface
 mlxx=type=http-response,pattern=^https:\/\/api\.bevol\.com\/(?:appmain\/app\/home\/page|usercenter\/account\/info|personal\/page|appmain\/app\/home\/launch|trialbox\/shop\/app\/homePage)$,requires-body=1,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/mlxx.js
 adrive2=type=http-response,pattern=^https:\/\/api\.alipan\.com\/apps\/v2\/users\/home\/(news|widgets),requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/adrive/adrive.js
 rrtv_json13=type=http-response,pattern=^https:\/\/api.juxingclub.com\/ad\/getAll,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
-goofish2=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/1\.0,requires-body=1,script-path=https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js
-goofish3=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.nearby\.itemdetail\.enter\/1\.0,requires-body=1,script-path=https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js
-goofish4=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.flow\.plat\.section,requires-body=1,script-path=https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js
-goofish5=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/,requires-body=1,script-path=https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js
 spotify-qx-header=type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$ url script-request-header https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-qx-header.js
 zheye.min14=type=http-response,pattern=^https:\/\/(page-info|api)\.zhihu\.com\/answers\/v2\/\d+,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 maimai_ads=type=http-response,pattern=^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/maimai/maimai_ads.js
 maimai_ads2=type=http-response,pattern=^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/maimai/maimai_ads.js
-goofish6=type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=1,script-path=https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js
-goofish7=type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=1,script-path=https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js
 zheye.min15=type=http-response,pattern=^https:\/\/(api|web-render)\.zhihu\.com\/topstory\/recommend,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 adsense=type=http-response,pattern=^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?),requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js
 weibo_json22=type=http-response,pattern=^https://new.vip.weibo.cn/littleskin/preview,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js
