@@ -4413,7 +4413,6 @@ URL-REGEX,^https://api\.bilibili\.com/x/vas_ads_open,REJECT
 URL-REGEX,^https://grpc\.biliapi\.net/bilibili\.app\.viewunite\.v1\.view/playpause,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.baichuan\.afc\.linkinforapidly,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.idle\.idleadv\.app\.launch\.report,REJECT
-URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idle\.activity\.query,REJECT
 URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.idle\.ad\.expose,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.idlecommerce\.splash,REJECT
@@ -4466,7 +4465,6 @@ URL-REGEX,^https://acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsresource
 URL-REGEX,^https://acs\.m\.taobao\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://acs\.m\.taobao\.com/gw/mtop\.idle\.idleadv\.app\.launch,REJECT
 URL-REGEX,^https://acs\.m\.taobao\.com/gw/mtop\.idle\.ad\.expose,REJECT
-URL-REGEX,^https://acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.activity\.query,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.wireless\.home\.splash,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.alimarket\.splash,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.taobao\.wireless\.splash,REJECT
@@ -4493,7 +4491,6 @@ URL-REGEX,^https://guide\-acs\.m\.goofish\.com/gw/mtop\.trip\.activity\.querytms
 URL-REGEX,^https://guide\-acs\.m\.goofish\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://guide\-acs\.m\.goofish\.com/gw/mtop\.idle\.idleadv\.app\.launch,REJECT
 URL-REGEX,^https://guide\-acs\.m\.goofish\.com/gw/mtop\.idle\.ad\.expose,REJECT
-URL-REGEX,^https://guide\-acs\.m\.goofish\.com/gw/mtop\.taobao\.idle\.activity\.query,REJECT
 URL-REGEX,^https://acs\.m\.goofish\.com/gw/mtop\.alibaba\.mum\.citem\.get,REJECT
 URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.taobao\.wireless\.home\.splash,REJECT
 URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.alimarket\.splash,REJECT
@@ -4508,7 +4505,6 @@ URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.taobao\.idle\.home\.welcome,
 URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.trip\.activity\.querytmsresources,REJECT
 URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.idle\.idleadv\.app\.launch,REJECT
-URL-REGEX,^https://g\-acs\.m\.goofish\.com/gw/mtop\.taobao\.idle\.activity\.query,REJECT
 URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.taobao\.wireless\.home\.splash,REJECT
 URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.alimarket\.splash,REJECT
 URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.taobao\.wireless\.splash,REJECT
@@ -4523,7 +4519,6 @@ URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsresou
 URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.idle\.idleadv\.app\.launch,REJECT
 URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.idle\.ad\.expose,REJECT
-URL-REGEX,^https://g\-acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.activity\.query,REJECT
 URL-REGEX,^https://ulk\.alimama\.com/tb,REJECT
 URL-REGEX,^https://guide\-acs\.m\.taobao\.com/gw/mtop\.taobao\.wireless\.home\.splash,REJECT
 URL-REGEX,^https://guide\-acs\.m\.taobao\.com/gw/mtop\.alimarket\.splash,REJECT
@@ -4539,7 +4534,6 @@ URL-REGEX,^https://guide\-acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsr
 URL-REGEX,^https://guide\-acs\.m\.taobao\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://guide\-acs\.m\.taobao\.com/gw/mtop\.idle\.idleadv\.app\.launch,REJECT
 URL-REGEX,^https://guide\-acs\.m\.taobao\.com/gw/mtop\.idle\.ad\.expose,REJECT
-URL-REGEX,^https://guide\-acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.activity\.query,REJECT
 URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.taobao\.wireless\.home\.splash,REJECT
 URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.alimarket\.splash,REJECT
 URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.taobao\.wireless\.splash,REJECT
@@ -4554,7 +4548,6 @@ URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsr
 URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
 URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.idle\.idleadv\.app\.launch,REJECT
 URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.idle\.ad\.expose,REJECT
-URL-REGEX,^https://trade\-acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.activity\.query,REJECT
 URL-REGEX,^https://mdap\.mpaas\.cn\-hangzhou\.aliyuncs\.com/loggw/logUpload\.do,REJECT
 URL-REGEX,^https://p0\.meituan\.net/bizad/,REJECT
 URL-REGEX,^https://p1\.meituan\.net/bizad/,REJECT
