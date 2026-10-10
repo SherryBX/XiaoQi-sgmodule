@@ -1,5 +1,5 @@
 #!name=小七自用模块
-#!desc=广告拦截 | 启动页净化 | 番茄小说去广告 | 趣智校园去广告 | 白名单防误杀 | 版本 v1.10
+#!desc=广告拦截 | 启动页净化 | 番茄小说去广告 | 趣智校园去广告 | 白名单防误杀 | 版本 v1.11
 
 [Rule]
 # --- 白名单(放行, 优先级最高) ---
@@ -5068,6 +5068,10 @@ DOMAIN-SUFFIX,1rtb.com,REJECT
 DOMAIN-SUFFIX,1rtb.net,REJECT
 DOMAIN,p5-ex-gddgtc-sign.douyinpic.com,REJECT
 DOMAIN,lf3-analytics.bytescm.com,REJECT
+DOMAIN-SUFFIX,julang.taobao.com,REJECT
+DOMAIN-SUFFIX,hardcoresir.net,REJECT
+DOMAIN-SUFFIX,kejet.net,REJECT
+# DOMAIN,p3-sign.douyinpic.com,REJECT  # 可选: 穿山甲素材图床(会误杀抖音系图片)
 
 [URL Rewrite]
 # --- 番茄小说 ---
