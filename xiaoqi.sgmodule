@@ -1,11 +1,21 @@
 #!name=小七自用模块
-#!desc=全链路去广告 | QUIC+HTTPDNS防绕过 | 原生Body/Header/MapLocal | 防误杀白名单 | 版本 v1.15
+#!desc=全链路去广告 | QUIC+HTTPDNS防绕过 | 原生Body/Header/MapLocal | 防误杀白名单 | 版本 v1.16
 
 [Rule]
 # --- 阻止 HTTP/3 (QUIC) 绕过 MITM 拦截 (置顶优先降级为 TCP) ---
 AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT
 # --- 白名单(放行, 优先级最高) ---
 DOMAIN,emby.bbqwq.com,DIRECT
+DOMAIN-SUFFIX,jinritemai.com,DIRECT
+DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+DOMAIN-SUFFIX,ecombdimg.com,DIRECT
+DOMAIN-SUFFIX,temai.snssdk.com,DIRECT
+DOMAIN,i.snssdk.com,DIRECT
+DOMAIN,i-lq.snssdk.com,DIRECT
+DOMAIN,i-hl.snssdk.com,DIRECT
+DOMAIN,is-lq.snssdk.com,DIRECT
+DOMAIN,webcast-open.douyin.com,DIRECT
+DOMAIN,content-open.douyin.com,DIRECT
 DOMAIN,reading.snssdk.com,DIRECT
 DOMAIN,api.fqnovel.com,DIRECT
 DOMAIN-WILDCARD,api*-normal.fqnovel.com,DIRECT
@@ -39,7 +49,6 @@ DOMAIN,api-mayi.django.t.taobao.com,DIRECT
 DOMAIN,umdc.alibabachengdun.com,DIRECT
 DOMAIN,grs.hihonorcloud.com,DIRECT
 IP-CIDR,101.36.166.16/30,REJECT,no-resolve
-DOMAIN-WILDCARD,webcast*-open*.douyin.com,REJECT
 DOMAIN-WILDCARD,pangolin*.snssdk.com,REJECT
 DOMAIN-WILDCARD,minigame*-normal.zijieapi.com,REJECT
 DOMAIN-WILDCARD,minigame*-normal-*.zijieapi.com,REJECT
@@ -53,9 +62,6 @@ DOMAIN-WILDCARD,tnc*-bjlgy*.bytedance.com,REJECT
 DOMAIN,tnc0-alisc1.zijieapi.com,REJECT
 DOMAIN,tnc0-aliec2.zijieapi.com,REJECT
 DOMAIN,praisewindow-sinfonlinea.ugsdk.cn,REJECT
-DOMAIN-WILDCARD,ecom*-normal*.ecombdapi.com,REJECT
-DOMAIN-WILDCARD,ec*-core*.ecombdapi.com,REJECT
-DOMAIN-WILDCARD,isaas*-normal*.ecombdapi.com,REJECT
 DOMAIN,v9-default.tt.x.bsgslb.cn,REJECT
 DOMAIN-SUFFIX,comfylink.com,REJECT
 DOMAIN-SUFFIX,ndcpp.com,REJECT
@@ -1516,8 +1522,6 @@ DOMAIN,zhihu.com.eo.dnse0.com,REJECT
 DOMAIN,api.zhihu.com.eo.dnse0.com,REJECT
 DOMAIN,gslb-dsa-tc.zhihu.com,REJECT
 DOMAIN,gslb-dsa.zhihu.com,REJECT
-DOMAIN,webcast-open.douyin.com.bytedns1.com,REJECT
-DOMAIN,webcast-open.douyin.com.queniuyk.com,REJECT
 DOMAIN,apmplus.volces.com,REJECT
 DOMAIN,d.kugou.com,REJECT
 DOMAIN,ins-u5twfbbu.ias.tencent-cloud.net,REJECT
@@ -1624,8 +1628,6 @@ DOMAIN,access.toggle.qq.com,REJECT
 DOMAIN,jsb.zijieapi.com,REJECT
 DOMAIN,gatherer.m.qq.com,REJECT
 DOMAIN,orange-dc.m.taobao.com,REJECT
-DOMAIN,i.snssdk.com,REJECT
-DOMAIN,lf.snssdk.com,REJECT
 DOMAIN,sdk-track.66mobi.com,REJECT
 DOMAIN,inner.shunchangzhixing.com,REJECT
 DOMAIN,static.shunchangzhixing.com,REJECT
@@ -1655,7 +1657,6 @@ DOMAIN,mirrorcos.sched.stsoclegoby2-dk.tdnsvod1.cn,REJECT
 DOMAIN,s3plus.sankuai.com,REJECT
 DOMAIN,mum.hzchengdun.com,REJECT
 DOMAIN,bytedance.com.queniurc.com,REJECT
-DOMAIN,frontier100-normal.zijieapi.com,REJECT
 DOMAIN,log5-lf.qishui.com,REJECT
 DOMAIN,12413900.sched.legopic2-dk.tdnsv6.com,REJECT
 DOMAIN,1908967600.ahdohpiechei.com,REJECT
@@ -1741,7 +1742,6 @@ DOMAIN,vip.jiasule.org,REJECT
 DOMAIN,volcsirius.com,REJECT
 DOMAIN,waapdg.jd.com.gslb.qianxun.com,REJECT
 DOMAIN,webboot.zhangyue.com,REJECT
-DOMAIN,webcast-open.douyin.com,REJECT
 DOMAIN,www.bytedance.com.queniurc.com,REJECT
 DOMAIN,xdcs.c.ximalaya.com,REJECT
 DOMAIN,xdcs-collector.ximalaya.com,REJECT
@@ -2162,8 +2162,6 @@ DOMAIN,huodong.caiyun.feixin.10086.cn,REJECT
 DOMAIN,backendmarket.youdao.com,REJECT
 DOMAIN,poplayer.template.alibaba.com,REJECT
 DOMAIN,adx.qq.com,REJECT
-DOMAIN,item.ecombdimg.com,REJECT
-DOMAIN,aio.ecombdimg.com,REJECT
 DOMAIN,adfish.taobao.com,REJECT
 DOMAIN,fishadm.taobao.com,REJECT
 DOMAIN,adlog.taobao.com,REJECT
@@ -2200,7 +2198,6 @@ DOMAIN,dmsdk-api-ssp.dmrtb.com,REJECT
 DOMAIN,dmsdk-tracking.dmrtb.com,REJECT
 DOMAIN,dmugc-cn.domobcdn.com,REJECT
 DOMAIN,jt-sdk-ios.oss-cn-beijing.aliyuncs.com,REJECT
-DOMAIN,lf-sourcecdn-tos.bytegecko.com,REJECT
 DOMAIN,mores.takuad.com,REJECT
 DOMAIN,adprolink.xwpbj.com,REJECT
 DOMAIN,v66-ad.ndcjl.com,REJECT
@@ -2293,8 +2290,6 @@ DOMAIN,adx.babytree.com,REJECT
 DOMAIN,adx.yg84.com,REJECT
 DOMAIN-WILDCARD,adx.*.com,REJECT
 DOMAIN,ssp.yg84.com,REJECT
-DOMAIN,i-lq.snssdk.com,REJECT
-DOMAIN,i-hl.snssdk.com,REJECT
 DOMAIN,p3-pack.byteimg.com,REJECT
 DOMAIN,p6-pack.byteimg.com,REJECT
 DOMAIN,pangolin.snssdk.com,REJECT
@@ -4389,7 +4384,6 @@ DOMAIN-WILDCARD,h-adashx4bc.ut.*,REJECT
 DOMAIN-WILDCARD,h-adashx-internal-v6.ut.*,REJECT
 DOMAIN-WILDCARD,adashx4yt.m.taobao.*,REJECT
 DOMAIN-WILDCARD,adashx.ut.*,REJECT
-DOMAIN-WILDCARD,webcast-open.douyin.*,REJECT
 DOMAIN-SUFFIX,voiceads.*,REJECT
 DOMAIN-SUFFIX,zhiyan.tencent-cloud.net,REJECT
 DOMAIN-SUFFIX,tanx.com,REJECT
@@ -6035,8 +6029,6 @@ DOMAIN-KEYWORD,-ad.video.yximgs.com,REJECT
 DOMAIN-KEYWORD,-ad.wtzw.com,REJECT
 DOMAIN-KEYWORD,-be-pack-sign.pglstatp-toutiao.com,REJECT
 # --- 番茄小说 ---
-DOMAIN,activity-ag.awemeughun.com,REJECT
-DOMAIN,security-lq.snssdk.com,REJECT
 DOMAIN-SUFFIX,novelapp.ixigua.com,REJECT
 DOMAIN-SUFFIX,default.ixigua.com,REJECT
 DOMAIN,msync-im1-vip6-std.easemob.com,REJECT
@@ -6917,7 +6909,6 @@ DOMAIN-SUFFIX,atdmt.com,REJECT
 DOMAIN-SUFFIX,staticxx.facebook.com,REJECT
 DOMAIN-SUFFIX,click1n.soufun.com,REJECT
 DOMAIN-SUFFIX,countubn.light.soufun.com,REJECT
-DOMAIN,is-lq.snssdk.com,REJECT
 DOMAIN,ug-sinfonlinea.bytedance.com,REJECT
 DOMAIN,adv-adlog.variflight.com,REJECT
 DOMAIN,adv-ads.variflight.com,REJECT
@@ -7622,18 +7613,8 @@ DOMAIN-SUFFIX,h.pcd.autohome.com.cn,REJECT
 DOMAIN-SUFFIX,g3.iqilu.com,REJECT
 DOMAIN-SUFFIX,g4.iqilu.com,REJECT
 DOMAIN,adlaunch.qingting.fm,REJECT
-AND,((DOMAIN-KEYWORD,api100-core-quic-),(DOMAIN-SUFFIX,amemv.com)),REJECT
-AND,((DOMAIN-KEYWORD,api100-normal-quic-),(DOMAIN-SUFFIX,amemv.com)),REJECT
-AND,((DOMAIN-KEYWORD,api100-normal-quic-aweme-),(DOMAIN-SUFFIX,amemv.com)),REJECT
-AND,((DOMAIN-KEYWORD,api100-quic-core-),(DOMAIN-SUFFIX,amemv.com)),REJECT
-AND,((DOMAIN-KEYWORD,api100-quic-normal-),(DOMAIN-SUFFIX,amemv.com)),REJECT
-AND,((DOMAIN-KEYWORD,frontier-aweme-),(AND,((OR,((DOMAIN-KEYWORD,-ipa.),(DOMAIN-KEYWORD,-ipainner.),(DOMAIN-KEYWORD,-origin.),(DOMAIN-KEYWORD,-ipainner-))),(OR,((DOMAIN-SUFFIX,snssdk.com),(DOMAIN-SUFFIX,amemv.com)))))),REJECT
-AND,((DOMAIN-KEYWORD,frontier100-aweme),(DOMAIN-SUFFIX,amemv.com)),REJECT
 AND,((DOMAIN-KEYWORD,ma5-normal-),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((DOMAIN-KEYWORD,polaris5-normal-),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
-AND,((DOMAIN-KEYWORD,webcast100-ws-c-),(DOMAIN-SUFFIX,amemv.com)),REJECT
-DOMAIN,frontier-aweme-hl.snssdk.com,REJECT
-DOMAIN,frontier-aweme.snssdk.com,REJECT
 DOMAIN,frontier-quic-test.bytedance.com,REJECT
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443)),REJECT
 AND,((IP-CIDR,111.225.147.191/32,no-resolve),(DEST-PORT,6443)),REJECT
@@ -7899,7 +7880,6 @@ DOMAIN-SUFFIX,tencentmind.com,REJECT
 DOMAIN-SUFFIX,p.tencentmind.com,REJECT
 DOMAIN,track.tenjin.com,REJECT
 DOMAIN,track.tenjin.io,REJECT
-DOMAIN,lf9-cdn-tos.bytegecko.com,REJECT
 DOMAIN,novel.pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,biz5.kankan.com,REJECT
 DOMAIN-SUFFIX,distf.kankan.com,REJECT
@@ -8548,7 +8528,6 @@ DOMAIN-SUFFIX,tosv.byted.org,REJECT
 DOMAIN-SUFFIX,tosv.boe.byted.org,REJECT
 DOMAIN-SUFFIX,extlog.snssdk.com,REJECT
 DOMAIN-SUFFIX,sdfp.snssdk.com,REJECT
-DOMAIN-SUFFIX,temai.snssdk.com,REJECT
 DOMAIN-SUFFIX,xlog.snssdk.com,REJECT
 DOMAIN-SUFFIX,bu01.zybang.com,REJECT
 DOMAIN-SUFFIX,bu02.zybang.com,REJECT
@@ -8654,12 +8633,10 @@ DOMAIN,appupdates.189.cn,REJECT
 DOMAIN,ark.letv.com,REJECT
 DOMAIN,atrace.chelaile.net.cn,REJECT
 DOMAIN,bbtads.babytree.com,REJECT
-DOMAIN,bsync3-normal.zijieapi.com,REJECT
 DOMAIN,collect.hnair.com,REJECT
 DOMAIN,collect.xiaopeng.com,REJECT
 DOMAIN,conf-darwin.xycdn.com,REJECT
 DOMAIN,config.inmobi.cn,REJECT
-DOMAIN,content-open.douyin.com,REJECT
 DOMAIN,corp.meitu.com,REJECT
 DOMAIN,cpush.trip.com,REJECT
 DOMAIN,credits.bz.mgtv.com,REJECT
@@ -8709,7 +8686,6 @@ DOMAIN,ipv6.music.163.com,REJECT
 DOMAIN,ivy.pchouse.com.cn,REJECT
 DOMAIN,jdqd.jd.com,REJECT
 DOMAIN,layout.meituan.net,REJECT
-DOMAIN,lf-webcast-gr-sourcecdn.bytegecko.com,REJECT
 DOMAIN,live-monitor-broker.sankuai.com,REJECT
 DOMAIN,livep.l.t002.ottcn.com,REJECT
 DOMAIN,log-verify.mob.com,REJECT
@@ -8997,7 +8973,6 @@ DOMAIN-SUFFIX,zymo.mps.weibo.com,REJECT
 DOMAIN-SUFFIX,zzspider.com,REJECT
 DOMAIN-KEYWORD,-adsystem.com,REJECT
 DOMAIN-KEYWORD,-analytics.bytescm.com,REJECT
-DOMAIN-KEYWORD,-lq.snssdk.com,REJECT
 DOMAIN-KEYWORD,-pack.byteimg.com,REJECT
 DOMAIN-KEYWORD,1258344696.file.myqcloud.com,REJECT
 DOMAIN-KEYWORD,ad-sign.byteimg.com,REJECT
